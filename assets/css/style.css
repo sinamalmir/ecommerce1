@@ -1,0 +1,1536 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Balsamiq+Sans:wght@400;700&family=Barlow+Condensed:wght@100;300;400;500;600;700;900&family=Cairo:wght@200;300;400;600;700;900&family=Jost:wght@100;200;300;400;500;600&family=Merriweather:ital,wght@1,300;1,400;1,700&family=Open+Sans:ital,wght@1,600&family=Oswald:wght@200;300;400;500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+    --bg-color-1 : rgb(217, 17, 32);
+    --bg-color-2 : #808080;
+    --bg-color-3 : #191919;
+
+    --bg-color-4 : rgb(157, 156, 156);
+    --bg-color-5 : #f7f8fb;
+    --bg-color-6 : #404b69;
+    --bg-color-7 :  #283149;
+    --bg-color-8 : #dddddd;
+    --bg-color-9 : rgba(112,112,112,1);
+
+}
+
+
+
+.bg-color-1 {
+    background: var(--bg-color-1);
+}
+.bg-color-2{
+    background: var(--bg-color-2);
+}
+.bg-color-3 {
+    background: var(--bg-color-3);
+}
+.bg-color-4{
+    background:var(--bg-color-4);
+}
+.bg-color-5{
+    background:var(--bg-color-5);
+}
+.bg-color-6{
+    background: var(--bg-color-6);
+}
+.bg-color-7{
+    background:var(--bg-color-7);
+}
+
+.txt-color-1{
+    color:var(--bg-color-7);
+}
+.txt-color-2{
+    color: var(--bg-color-6);
+}
+.txt-color-3 {
+    color: var(--bg-color-1);
+}
+.txt-color-4 {
+    color: var(--bg-color-3);
+}
+
+.anis-transition{
+    transition: all 0.3s ease-in-out;
+}
+
+.border-color-1{
+    border-color:#dbedf3 !important;
+}
+.border-color-2{
+    border-color:var(--bg-color-3) !important;
+}
+.border-color-3{
+    border-color:var(--bg-color-4) !important;
+}
+
+.border-rad-1{
+    border-radius: 15px;
+}
+
+.fs-7{
+    font-size: 0.9em !important;
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        /*max-width: 1170px;*/
+    }
+}
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a,p,ul{
+    font-family: sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+li a{
+    transition: all 0.2s ease-in-out;
+}
+.list-none{
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+.section{
+    margin-bottom: 100px !important;
+}
+
+button , button:focus , button:hover ,input:focus{
+    outline: none;
+}
+.anis-btn{
+    font-size: 1.3em;
+    padding: 14px 30px;
+}
+/* css for scroll menu */
+.fixed-top {
+    top: 0;
+    background: #fff;
+    box-shadow: 0 1px 20px 10px rgba(0,0,0, .05);
+    transition: all 0.8s ease-in-out;
+
+}
+/* end css for scroll menu */
+
+.top-bar{
+    padding: 15px 0;
+    border-bottom: 1px solid  rgba(230,230,230,1);
+}
+
+.search-box .search-top-bar{
+    width: 350px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    padding: 7px 14px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+}
+.top-header-icon li a{
+    margin-left: 25px;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+.top-header-icon li a:hover{
+    color: var(--bg-color-1);
+}
+
+.menu{
+    padding: 10px 0;
+}
+.main-menu > ul > li > a{
+    margin-left: 30px;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+}
+.main-menu > ul > li > a:hover{
+    color: var(--bg-color-1);
+}
+
+
+/* start banner  */
+.banner-box .banner-img {
+    overflow: hidden;
+}
+.banner-box .banner-img img{
+    max-width: 100%;
+    width: 100%;
+    transition: all .3s ease-in-out;
+    transform: scale(1);
+}
+.banner-box .banner-img:hover img{
+    transform: scale(1.06);
+
+}
+.banner-info h6 , .banner-info h4 ,.banner-info span{
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+
+}
+.banner-info{
+    flex-flow: column;
+    align-items: center;
+    top: 55%;
+    left: 20%;
+}
+.banner-info h6{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.banner-info h4{
+    font-size: 35px;
+}
+/* end banner  */
+
+
+/* start Feature product */
+
+.product-box{
+    margin-bottom: 50px;
+}
+
+.pro-info h5.pro-title{
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+.pro-info del{
+    color: var(--bg-color-2);
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+}
+.pro-info span{
+    color: var(--bg-color-1);
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+}
+
+.pro-action{
+    flex-flow: column;
+    right: -40px;
+    top: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.product-box:hover .pro-action{
+    right: 10px;
+    visibility: visible;
+    opacity: 1;
+}
+.pro-action span{
+    margin-bottom: 8px;
+    border-radius: 100%;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 2px 0;
+    transition: all .3s ease-in-out;
+}
+.pro-action span:hover{
+    background-color: #111;
+    color: #fff;
+}
+.pro-action-2 button{
+    width: 100%;
+}
+/* end Feature product */
+
+.title h3{
+    font-size: 32px;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+
+/* start favorite category */
+
+.cat-wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.category > ul > li > a{
+    margin-left: 50px;
+}
+.category > ul > li > a > img{
+    max-width: 100%;
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+.category > ul > li > a > img:hover{
+    opacity: 0.7;
+}
+.category > ul > li > a:hover{
+    color: #111;
+}
+.category > ul > li > a > p {
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+
+.category > ul > li > a > p:hover{
+    color: var(--bg-color-1);
+}
+/* end favorite category */
+
+
+/* start video part */
+.video-part{
+    padding: 50px 0;
+    border-top: 1px solid var(--bg-color-4);
+    border-bottom: 1px solid var(--bg-color-4);
+}
+.video-title h2{
+    font-size: 60px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.video-title h5{
+    font-size: 25px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    margin-bottom:25px;
+}
+
+.video-title button{
+    font-size: 20px ;
+    font-family: 'Jost', sans-serif;
+    border-radius: 20px;
+    padding: 5px 30px;
+    color: #fff;
+    background-color: var(--bg-color-1);
+    transition: all .3s ease-in-out;
+}
+.video-title button:hover{
+    color: var(--bg-color-1);
+    background-color: #fff;
+}
+.insta-box a img{
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+.insta-box a img:hover{
+    opacity: 0.7;
+}
+
+
+/* end video part */
+
+
+/*start service box*/
+.service{
+    padding: 15px 0;
+    border-top: 1px solid var(--bg-color-4);
+    border-bottom: 1px solid var(--bg-color-4);
+}
+.service-box {
+    justify-content: center;
+    align-items: center;
+}
+.service-box .service-icon {
+    margin-right: 10px;
+    font-size: 30px;
+}
+.service-box .service-text {
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+
+}
+
+/*end service box*/
+
+/* start footer */
+.footer{
+    padding: 50px 0;
+
+}
+.footer-border{
+    border-bottom: 1px solid var(--bg-color-4);
+
+}
+
+.footer-title h6{
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+    color: var(--bg-color-2);
+    margin-bottom: 20px;
+}
+.footer-links{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+
+}
+.footer-links > li{
+    padding: 5px 0;
+
+}
+.footer-links > li > a {
+    padding: 5px 0;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.subscribe{
+    padding: 0 60px;
+}
+.subscribe-title h4{
+    font-size: 28px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+
+}
+
+.subscribe-info input{
+    width: 300px;
+    border-radius: 20px;
+    font-family: 'Jost', sans-serif;
+    padding: 7px 30px;
+    border: 1px solid var(--bg-color-4);
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+.subscribe-info button{
+    border-radius: 20px;
+    padding: 7px 40px;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+    margin-left: 10px;
+    vertical-align: middle;
+    background-color: var(--bg-color-1);
+    transition: all .3s ease-in-out;
+}
+.subscribe-info button:hover{
+    color: var(--bg-color-1);
+    background-color: #fff;
+
+}
+
+.social-footer{
+    padding: 40px 60px;
+}
+.social-footer ul li a{
+    margin-right: 30px;
+    font-size: 20px;
+    transition: all .1s ease-in-out;
+}
+.social-footer ul li a:hover{
+    opacity: 0.5;
+    color: #111;
+}
+
+.contact-number{
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+
+.copyright{
+    padding: 30px 0 0 0 ;
+}
+.copyright p{
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+}
+.copyright p span{
+    font-weight: 500;
+    color: var(--bg-color-1);
+}
+
+/* end footer */
+
+
+/*============================= start css for product page =============================*/
+
+.head-top{
+    padding: 20px 0;
+    border-bottom: 1px solid var(--bg-color-4);
+}
+
+.breadcrumb > li > a{
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: var(--bg-color-2);
+    font-weight: 300;
+}
+.last-bread{
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.product-img-box img{
+    max-width: 100%;
+    width: 100%;
+}
+.img-gallery-item{
+    margin: 0;
+    padding: 0;
+}
+.product-item-gallery{
+    width: 20%;
+}
+.product-item-gallery .img-gallery-item > li{
+    width: 100%;
+}
+.product-item-gallery .img-gallery-item > li > a > img{
+    /*max-width: 100%;*/
+    width: 100%;
+    margin-bottom: 5px;
+    transition: all .1s ease-in-out;
+}
+
+.product-item-gallery .img-gallery-item > li > a > img.active{
+    border: 1px solid #111;
+}
+.product-item-gallery .img-gallery-item > li > a > img:hover{
+    border: 1px solid #111;
+}
+
+
+/* start product info */
+
+.product-information{
+    flex-flow: column;
+}
+.pro-title h3{
+    font-family: 'Jost', sans-serif;
+    font-weight: 450;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.review-num span{
+    margin-left: 10px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    vertical-align: middle;
+    align-items: center;
+    color: var(--bg-color-2);
+
+}
+
+.pro-star .rating-star{
+    position: relative;
+    font-size: 12px;
+    overflow: hidden;
+    height: 23px;
+    width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Font Awesome 5 Pro';
+
+}
+.pro-star .rating-star::before{
+    content: '\f005\f005\f005\f005\f005';
+    font-size: 12px;
+    position: absolute;
+    top: 0; left: 0;
+    float: left;
+    color: #111;
+}
+.rating-star .rate{
+    overflow: hidden;
+    position: absolute;
+    top: 0; left: 0;
+    float: left;
+    padding-top: 2em;
+    color: #111;
+}
+.rating-star .rate::before{
+    content: '\f005\f005\f005\f005\f005';
+    font-size: 12px;
+    position: absolute;
+    top: 0; left: 0;
+    float: left;
+    font-weight: 900;
+}
+
+.pro-code span:nth-child(1){
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: 20px;
+}
+.pro-code span:nth-child(2){
+     font-family: 'Jost', sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+ }
+
+.pro-price span{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+    color: var(--bg-color-1);
+}
+.pro-price del{
+    /*font-size: 35px;*/
+    /*font-weight: 500;*/
+    font-family: 'Jost', sans-serif;
+    color: var(--bg-color-2);
+    margin-left: 5px;
+}
+
+
+.title-color {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+}
+
+.chose-color{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.chose-color span{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all .3s ease-in-out;
+
+}
+.chose-color span:hover{
+    border: 1px solid rgba(0 ,0 , 0, .3);
+    box-shadow: 0 0 3px 3px rgba(0 ,0 , 0, .3);
+}
+
+
+.chose-size > li > a{
+    display: inline-block;
+    width: 40px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid var(--bg-color-4);
+    margin-right: 14px;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+    transition: all .2s ease-in-out;
+}
+.chose-size > li > a:hover{
+    border-color: #111;
+}
+
+.quantity-box input.quantity-num{
+    /*margin-right: 20px;*/
+    width: 70%;
+    border-radius: 40px;
+    border: 1px solid  var(--bg-color-4);
+    padding: 7px 30px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+}
+
+input.minus , input.plus{
+    width: 20px;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+}
+input.minus{
+    left: 5%;
+    top: 20%;
+}
+input.plus{
+    right: 35%;
+    top: 20%;
+}
+
+.add-to-cart button{
+    padding: 7px 70px;
+    border-radius: 40px;
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+}
+.add-to-cart button:hover {
+    color: #111;
+    background-color: #fff;
+}
+.pro-buy-now button{
+    padding: 7px 70px;
+    border-radius: 40px;
+    font-family: 'Jost', sans-serif;
+    font-size: 23px;
+    width: 77%;
+}
+
+.pro-wish-comp > ul > li > a{
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    margin-right: 35px;
+    font-size: 15px;
+    transition: all .3s ease-in-out;
+}
+.pro-wish-comp > ul > li > a > i{
+    margin-right: 5px;
+    font-size: 13px;
+}
+.pro-wish-comp > ul > li > a:hover{
+    color: var(--bg-color-1);
+}
+.pro-share-social > ul > li > a{
+    font-size: 14px;
+    margin-right: 16px;
+    transition: all .2s ease-in-out;
+}
+.pro-share-social > ul > li > a:hover{
+    opacity: 0.7;
+    color: #111;
+}
+
+
+.product-detail .nav .nav-link {
+    display: block;
+    color: #111;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.nav-link.active {
+    color: var(--bg-color-1) !important;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+    border-top: 1px solid var(--bg-color-1) !important;
+
+}
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: 0 0;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #111 !important;
+}
+
+.tab-pane{
+    padding: 40px 30px;
+    border: 1px solid var(--bg-color-4);
+    border-top: none;
+}
+
+.pro-detail-title h3{
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 20px;
+
+}
+.pro-text p{
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+
+.subsc-title h4{
+    font-size: 22px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.footer-logo h2{
+    font-family: 'Jost', sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer-address p{
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 23px;
+}
+.footer-icon > ul > li > a{
+    margin-right: 15px;
+}
+.footer-icon > ul > li > a:hover{
+    color: #111;
+    opacity: 0.7;
+}
+
+.footer-wrapper:after{
+    content: "";
+    width: 1px;
+    height: 230px;
+    background-color: var(--bg-color-4);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.subsc:before{
+    content: "";
+    width: 1px;
+    height: 230px;
+    background-color: var(--bg-color-4);
+    position: absolute;
+    top: 10px;
+    left: -30px;
+}
+
+.phone-num span.number-phone{
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+.other-footer{
+    border-top: 1px solid var(--bg-color-4);
+    padding: 100px 0 0 0;
+}
+
+
+/* end product info */
+
+/*============================= end css for product page =============================*/
+
+
+/*============================= start css for 404 page =============================*/
+
+.content-404{
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+img.img-404{
+    max-width: 100%;
+    width: 40%;
+}
+
+input.search-404{
+    width: 400px;
+    border: 1px solid var(--bg-color-4);
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+
+}
+
+button.search-btn{
+    background-color: var(--bg-color-1);
+    border-radius: 20px;
+    font-family: 'Jost', sans-serif;
+    width: 40px;
+    font-weight: 300;
+    height: 40px;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.back-home button{
+    padding: 10px 40px;
+    font-family: 'Jost', sans-serif;
+    background-color: var(--bg-color-1);
+    color: #fff;
+    border-radius: 40px;
+    transition: all .3s ease-in-out;
+
+}
+.back-home button:hover , .search-btn:hover{
+    background-color: #fff;
+    color: var(--bg-color-1);
+}
+
+
+/*============================= end css for 404 page =============================*/
+
+
+
+/*============================= start css for about page =============================*/
+
+li.breadcrumb-item.last-bread  {
+    margin-top: 5px;
+}
+
+.about-wrapper-text h2 , .about-wrapper-text p ,.about-wrapper-text span {
+    font-family: 'Jost', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 40px;
+
+}
+.about-wrapper-text p{
+    font-size: 25px;
+
+}
+.about-wrapper-text span{
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.about-wrapper-text > ul:before{
+    content: "";
+    width: 60%;
+    height: 1px;
+    background-color: var(--bg-color-4);
+    position: absolute;
+    top: -20px;
+    left: 20%;
+}
+
+.about-wrapper-text > ul > li > a {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 30px;
+
+
+}
+.about-wrapper-text > ul > li > a > i{
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.about-desc h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-family: 'Jost', sans-serif;
+
+}
+.about-desc p:nth-child(1){
+    font-size: 22px;
+    line-height: 1.5rem;
+    font-family: 'Jost', sans-serif;
+
+}
+.about-desc p.first-p{
+    font-size: 22px;
+    line-height: 1.5em;
+    font-family: 'Jost', sans-serif;
+}
+.about-desc p{
+    font-size: 16px;
+    /*line-height: 1.5em;*/
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+}
+
+.about-desc span{
+    display: block;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+
+}
+
+.about-desc span i{
+    color: var(--bg-color-1);
+    margin-right: 5px;
+}
+
+.about-title{
+    font-family: 'Jost', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+.wrapper-ab {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-ab i {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.wrapper-ab h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+.wrapper-ab p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+}
+
+.blog-slide h4{
+    font-family: 'Jost', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin : 40px 0;
+
+}
+.blog-wrapper{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.blog-desc {
+    flex-flow: column;
+    align-items: center;
+}
+.blog-desc a{
+    font-size: 28px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    transition: all .3s ease-in-out;
+}
+.blog-desc a:hover{
+    color: var(--bg-color-1);
+}
+.blog-desc span.blog-date{
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+
+/*============================= end css for about page =============================*/
+
+
+/*============================= start css for blog page =============================*/
+
+.bl h2{
+    font-family: 'Jost', sans-serif;
+    font-size: 33px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+.filter > ul > li {
+    margin-right: 25px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    cursor: pointer;
+font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+.filter > ul > li:hover{
+    color: var(--bg-color-1);
+}
+
+.blog-img.hide{
+    display: none;
+}
+.pagination-wrapper{
+    margin-bottom: 80px;
+}
+.pagination-wrapper > ul > li > a{
+    margin-right: 10px;
+    /*background-color: #111;*/
+    color: #111;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+.pagination-wrapper > ul > li > a:hover{
+    background-color: #111;
+    color: #fff;
+}
+.pagination-wrapper > ul > li > a.active{
+    background-color: #111;
+    color: #fff;
+}
+
+
+
+/*============================= end css for blog page =============================*/
+
+/*============================= start css for archive product page =============================*/
+.head-banner-img img{
+    width: 100%;
+    max-height: 150px;
+}
+
+/* start css for sidebar blog*/
+.widget{
+    margin: 15px 0;
+}
+
+.widget-title{
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    margin-top: 10px;
+
+}
+.widget-archive{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.widget-archive > li > a{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.widget-archive > li > a > span.archive-year{
+    padding: 5px 0;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+.list-brand{
+    display: flex;
+    flex-flow: column;
+}
+.custom-checkbox{
+    padding: 5px 0;
+}
+.list-brand .form-check-label{
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.tags a {
+    font-family:'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 2px 5px;
+    border: 1px solid var(--bg-color-4);
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius: 40px;
+    transition: all .3s ease-in-out;
+}
+
+.pro-size-wrap span{
+    font-family:'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 2px 10px;
+    border: 1px solid var(--bg-color-4);
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius: 40px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.tags a:hover , .pro-size-wrap span:hover{
+    color: #111;
+    border-color: #111;
+}
+
+.banner-img-aside a img{
+    max-width: 70%;
+    width: 100%;
+}
+.shop-banner{
+    position: relative;
+}
+
+.shop-banner-content{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+}
+
+
+/* end filter  */
+
+.aside{
+    /*background-color: grey;*/
+    position: absolute;
+    /*left: 0;*/
+    transition: .4s;
+
+}
+.aside.expand {
+    left: -100%;
+}
+
+.pro-section{
+    margin:0 0 0 350px;
+    transition: .4s;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 75%;
+}
+.aside.expand ~ .pro-section {
+    margin: 0;
+    width: 100%;
+}
+
+
+.dropdown-wrapper{
+    flex-flow: row;
+    justify-content: end;
+}
+.dropdown-toggle{
+    margin-left: 20px;
+}
+.btn-secondary {
+    color: #111;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-secondary:hover {
+    /*color: rgb(255, 255, 255);*/
+    /*background-color: rgb(92, 99, 106);*/
+    /*border-color: rgb(86, 94, 100);*/
+    color: var(--bg-color-1);
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-secondary:focus {
+    color: #111;
+    background-color: #fff;
+    border-color: #fff;
+    /*box-shadow: 0 0 0 0.25rem rgb(130 138 145 / 50%);*/
+    box-shadow: none;
+}
+
+.filter-wrapper span{
+    font-size: 45px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+}
+.filter-wrapper button{
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+    margin-left: 240px;
+}
+.filter-wrapper a{
+    font-size: 19px;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+    margin-left: 20px;
+    color: var(--bg-color-2);
+    transition: all .3s ease-in-out;
+}
+.filter-wrapper a:hover{
+    color: #111;
+}
+
+.product-wrapper{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    /*justify-content: space-between;*/
+}
+
+.product-box{
+    width: 24%;
+    margin-right: 5px;
+}
+
+
+.product-box img {
+    transition: all .7s linear;
+    max-width: 100%;
+    width: 100%;
+
+}
+
+.img-hover{
+    max-width: 100%;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s linear;
+}
+.product-box:hover img{
+    opacity: 0;
+}
+.product-box:hover img.img-hover{
+    opacity: 1;
+}
+
+.pro-section{
+    min-height: 1400px !important;
+}
+
+.pro-action-2{
+    bottom: 75px;
+    left: 0;
+
+}
+ a.add-cart-btn{
+    bottom: 70px;
+     text-align: center;
+    padding: 5px 0;
+    background-color: #111;
+    width: 100%;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    transition: all .3s ease-in-out;
+     /*display: none;*/
+    opacity: 0;
+     visibility: hidden;
+}
+a.add-cart-btn:hover{
+    background-color: var(--bg-color-1);
+}
+
+.product-box:hover .add-cart-btn{
+    bottom: 75px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+/*============================= end css for archive product page =============================*/
+
+
+/*============================= start  css for contact page =============================*/
+
+
+.form-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 20px 20px;
+    margin-bottom: 50px;
+
+}
+.username , .email , .phone , .massage{
+    flex-flow: column;
+    margin-bottom: 20px;
+}
+.username input , .email input , .phone input , .massage input{
+    padding: 10px 10px;
+    text-transform: capitalize;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    border: 1px solid  var(--bg-color-4);
+    margin-top: 10px;
+    border-radius: 40px;
+}
+.username label , .email label , .phone label , .massage label{
+    text-transform: capitalize;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+.contact-info-wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 20px 20px;
+    margin-bottom: 50px;
+    color: var(--bg-color-2);
+
+}
+
+.contact-title h3{
+    text-transform: uppercase;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.contact-desc p {
+    margin-top: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.contact-address p{
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.send button{
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+    padding: 7px 16px;
+    border-radius: 40px;
+    transition: all .3s ease-in-out;
+}
+.send button:hover{
+    background-color: #fff;
+    color: #111;
+}
+
+/*============================= end  css for contact page =============================*/
+
+/*============================= start  css for FAQ page =============================*/
+
+.accordion{
+    margin-bottom: 100px;
+}
+
+.accordion-button:not(.collapsed) {
+     color: #111;
+    background-color: #ffffff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.accordion-button{
+    border-bottom: 1px solid var(--bg-color-4);
+    margin: 0;
+    padding: 20px 0;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+
+}
+.accordion-body{
+    padding: 20px 0;
+}
+.accordion-body p{
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+
+}
+
+.accordion-item{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--bg-color-4);
+    outline: 0;
+    /*box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);*/
+    box-shadow: none;
+}
+
+
+
+/*============================= end  css for FAQ page =============================*/
+
+.login-wrapper , .register-wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 20px 20px;
+}
+
+.login-wrapper h3 , .register-wrapper h3{
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+
+.send button{
+    padding: 10px 70px;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+
+}
+
+.send input{
+    margin-left: 30px;
+    margin-right: 2px;
+}
+.send label{
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
