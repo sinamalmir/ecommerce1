@@ -10,16 +10,10 @@ get_template_part('template/index','favoriet-category');
 get_template_part('template/index','video-part');
 get_template_part('template/index','instagram');
 get_template_part('template/index','service');
+
+get_footer();
+
 ?>
-
-
-
-
-
-
-
-
-<?php get_footer(); ?>
 
 
 

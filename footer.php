@@ -179,13 +179,7 @@
 <!-- end footer -->
 
 
-<!--javascript and jquery links-->
-<script src="<?php echo TDU; ?>/assets/js/jquery-3.6.0.min.js"></script>
-<script src="<?php echo TDU; ?>/assets/owlcarousel/owl.carousel.min.js"></script>
-<script src="<?php echo TDU; ?>/assets/js/popper.min.js"></script>
-<script src="<?php echo TDU; ?>/assets/js/bootstrap.min.js"></script>
-<script src="<?php echo TDU; ?>/assets/js/jquery.countdown.min.js"></script>
-<script src="<?php echo TDU; ?>/assets/js/main.js"></script>
 
+<?php wp_footer(); ?>
 </body>
 </html>

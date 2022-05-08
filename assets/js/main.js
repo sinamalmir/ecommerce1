@@ -1,5 +1,5 @@
 
-    $(document).ready(function(){
+    jQuery(document).ready(function($){
     $('.countdown_time').each(function() {
         var endTime = $(this).data('time');
         $(this).countdown(endTime, function(tm) {
@@ -17,7 +17,7 @@
 
 });
 
-    $(document).ready(function (){
+    jQuery(document).ready(function ($){
     $('.product-carousel').owlCarousel({
         dots: false,
         loop:true,
@@ -116,7 +116,7 @@
 
 //     js for grid and list in product page
 
-$(document).ready(function(){
+    jQuery(document).ready(function($){
 
     $(".shorting-icon").on("click" , function () {
          if ($(this).hasClass("grid")){
