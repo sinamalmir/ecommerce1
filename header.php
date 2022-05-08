@@ -13,59 +13,26 @@
 
 <?php wp_head(); ?>
 </head>
-<body>
-<?php wp_body_open(); ?>
+<body <?php body_class(); ?> >
+
+<?php
+    if ( function_exists( 'wp_body_open' ) ) {
+        wp_body_open();
+    }
+?>
 
 <!-- start header -->
 <header >
-    <div class="top-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="search-box">
-                        <input type="text" placeholder="search for product" class="search-top-bar">
-                        <span class="search-icon">  </span>
-                    </div>
-                </div>
 
-                <div class="col-md-4 text-center">
-                    <div class="top-bar-logo">
-                        <h2> skyTeam </h2>
-                    </div>
-                </div>
+    <?php
+        get_template_part('template/header/top-header');
+        get_template_part('template/header/bottom-header');
+     ?>
 
-                <div class="col-md-4 d-flex justify-content-end">
-                    <div class="top-bar-menu">
-
-                        <ul class="list-none top-header-icon">
-                            <li><a href="#"> <i class="far fa-user"></i> </a></li>
-                            <li><a href="#"> <i class="far fa-heart"></i> </a></li>
-                            <li><a href="#"> <i class="far fa-shopping-cart"></i> </a></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="menu">
-        <div class="container ">
-            <div class="row ">
-                <div class="col d-flex justify-content-center ">
-                    <nav class="main-menu">
-                        <ul class="list-none">
-                            <li><a href="#"> home </a></li>
-                            <li><a href="#"> page </a></li>
-                            <li><a href="#"> shop </a></li>
-                            <li><a href="#"> feature </a></li>
-                            <li><a href="#"> blog </a></li>
-                            <li><a href="#"> contact us </a></li>
-                            <li><a href="#"> about us </a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
 </header>
 <!-- end header -->
+
+<!-- if u have a modal search or anything u can add new file about that like up code -->
+ 
+
+
