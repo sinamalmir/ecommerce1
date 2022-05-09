@@ -11,13 +11,11 @@
                 <h2>
                     <?php the_title(); ?>
                 </h2>
-                <div class="single-blog-date">
-                    <span>January 22, 2021</span>
-                </div>
+               <?php get_template_part('template/single/blog-meta'); ?>
             </div>
         </div>
         <div class="blog-main-img text-center">
-            <img src="<?php echo TDU?>/assets/images/blog-1.jpeg" alt="">
+            <?php the_post_thumbnail(); ?>
         </div>
         <div class="blog-content-wrapper">
             <div class="blog-content">
